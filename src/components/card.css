@@ -1,0 +1,61 @@
+.cardContener, .resposta{
+    max-width: 300px;
+    width:90%;
+    height:auto;
+    margin: 40px auto 1px auto;
+    background-color: #ccc;
+}
+.cardContener span{
+    color: red;
+    text-align: right;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.cardContener span:hover{
+    color: rgb(194, 5, 5);
+}
+.pergunta{
+    padding:0px 10px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaa;
+}
+.contenerPergunta{
+    width: 90%;
+    height:100%;
+    
+    overflow: hidden;
+}
+.pergunta span{
+    width: 10px;
+    height: 100%;
+    cursor: pointer;
+    
+    font-weight: bold;
+   transform: rotate(180deg);
+   transition: .5s;
+
+}
+.pergunta.active span{
+    transition: .9s;
+
+   transform: rotate(0deg);
+
+}
+.resposta{
+    height:0px;
+    padding: 0px;
+    overflow: hidden;
+    margin: 0px auto;
+    transition: .5s;
+
+}
+
+.resposta.active{
+    transition: 1s;
+    height: 100px;
+    padding: 10px;
+}
